@@ -1,0 +1,129 @@
+{
+  "beijing": [{
+      "id": "1",
+      "brand": "volkswagen",
+      "year": "2013",
+      "displacement": "1.6",
+      "Automatic": "自动挡",
+      "Price": "6.86",
+      "oldPrice": "15.00",
+      "imgUrl": "https://image.guazistatic.com/gz01190214/16/21/ab157a023f303dc24328758454eb5591.jpg@base@tag=imgScale&w=287&h=192&c=1&m=2&q=88",
+      "title": "大众 朗逸 改款经典",
+      "Kilometres": "1.6"
+
+    },
+    {
+      "id": "2",
+      "brand": "volkswagen",
+      "year": "2013",
+      "displacement": "1.8",
+      "Automatic": "自动挡",
+      "Price": "10.62",
+      "oldPrice": "25.30",
+      "imgUrl": "https://image.guazistatic.com/gz01190305/15/17/21a28eb34f606c5f54c0f11b25cace0f.jpg@base@tag=imgScale&w=287&h=192&c=1&m=2&q=88",
+      "title": "大众 迈腾 豪华版",
+      "Kilometres": "9.0"
+
+
+    },
+    {
+      "id": "3",
+      "brand": "volkswagen",
+      "year": "2010",
+      "displacement": "1.8",
+      "Automatic": "自动挡",
+      "Price": "10.69",
+      "oldPrice": "23.50",
+      "imgUrl": "https://image.guazistatic.com/gz01190228/11/20/24e5c950b2850aa9f30f399a4b1eb142.jpg@base@tag=imgScale&w=287&h=192&c=1&m=2&q=88",
+      "title": "大众 帕萨特 御享版",
+      "Kilometres": "14.6"
+
+
+    },
+    {
+      "id": "4",
+      "brand": "volkswagen",
+      "year": "2012",
+      "displacement": "2.0",
+      "Automatic": "自动挡",
+      "Price": "13.66",
+      "oldPrice": "22.80",
+      "imgUrl": "https://image.guazistatic.com/gz01190305/10/57/2a6bc06470e709a729254cacabb4ed8a.jpg@base@tag=imgScale&w=287&h=192&c=1&m=2&q=88",
+      "title": "大众 cc 豪华型",
+      "Kilometres": "5.2"
+
+
+    },
+    {
+      "id": "5",
+      "brand": "volkswagen",
+      "year": "2016",
+      "displacement": "1.4",
+      "Automatic": "手动挡",
+      "Price": "4.70",
+      "oldPrice": "10.50",
+      "imgUrl": "https://image1.guazistatic.com/qn18121214054341323366918dc47e9963ffe016b0fdef.jpg?imageView2/1/w/287/h/192/q/88",
+      "title": "大众 捷达 质惠版",
+      "Kilometres": "7.6"
+
+
+    },
+    {
+      "id": "6",
+      "brand": "volkswagen",
+      "year": "2008",
+      "displacement": "1.6",
+      "Automatic": "手动挡",
+      "Price": "3.12",
+      "oldPrice": "12.70",
+      "imgUrl": "https://image.guazistatic.com/gz01190306/10/29/b77591b07f7fc28f20d25f501d2dc8df.jpg@base@tag=imgScale&w=287&h=192&c=1&m=2&q=88",
+      "title": "大众 朗逸 品悠版",
+      "Kilometres": "7.1"
+
+
+    },
+    {
+      "id": "7",
+      "brand": "volkswagen",
+      "year": "2016",
+      "displacement": "1.6",
+      "Automatic": "自动挡",
+      "Price": "14.86",
+      "oldPrice": "30.60",
+      "imgUrl": "https://image.guazistatic.com/gz01190222/18/47/0cedf28e42c27b6dfe01b602b708f70a.jpg@base@tag=imgScale&w=287&h=192&c=1&m=2&q=88",
+      "title": "大众 途观 四驱版",
+      "Kilometres": "5.1"
+
+
+    },
+    {
+      "id": "8",
+      "brand": "volkswagen",
+      "year": "2013",
+      "displacement": "1.4",
+      "Automatic": "自动挡",
+      "Price": "4.80",
+      "oldPrice": "13.28",
+      "imgUrl": "https://image.guazistatic.com/gz01190220/12/33/717e005d72de92e55b10a45ee7848be0.jpg@base@tag=imgScale&w=287&h=192&c=1&m=2&q=88",
+      "title": "大众 POLO 舒适版",
+      "Kilometres": "4.3"
+
+
+    }, {
+      "id": "9",
+      "brand": "volkswagen",
+      "year": "2012",
+      "displacement": "1.8",
+      "Automatic": "手动挡",
+      "Price": "10.95",
+      "oldPrice": "22.55",
+      "imgUrl": "https://image.guazistatic.com/gz01190228/15/05/b9d2d9bee90cd25dfd54e22e2dac9273.jpg@base@tag=imgScale&w=287&h=192&c=1&m=2&q=88",
+      "title": "大众 途观 两驱",
+      "Kilometres": "3.3"
+
+
+    }
+  ]
+
+
+}
