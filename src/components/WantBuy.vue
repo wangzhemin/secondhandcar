@@ -2,9 +2,12 @@
   <div id="wantBuy">
     <div class="container">
       <!-- 条件选择框 -->
-      <div class="conSelectionBox">
-        <div class="selectionBoxHeader">
-          <span class="title">值脉脉二手车平台欢迎你</span>
+      <div class="conSelectionBox clearfix">
+        <!-- 搜索框 -->
+        <div class="selectionBoxHeader clearfix">
+          <a href="/">
+            <span class="title">值脉脉二手车平台欢迎你</span>
+          </a>
           <div class="carSearch">
             <div class="searchBox">
               <input
@@ -17,6 +20,46 @@
               <button class="search-btn" type="button" @click="toSearchCar(carArrs)"></button>
             </div>
           </div>
+        </div>
+        <!-- 条件筛选框 -->
+        <div class="screen">
+          <!-- 所在地 -->
+          <dl class="clearfix">
+            <dt>所在地</dt>
+            <dd>
+              <div class="dd-top">
+                <span class="a-box">
+                  <!-- 不限 -->
+                  <a class="active" href="/hz/buy/#bread">北京</a>
+                  <!-- 热门所在地 -->
+                  <a href="/hz/buick/#bread">上海</a>
+                  <a href="/hz/bmw/#bread">广州</a>
+                  <a href="/hz/ford/#bread">深圳</a>
+                  <a href="/hz/audi/#bread">杭州</a>
+                </span>
+              </div>
+            </dd>
+          </dl>
+          <!-- 品牌 -->
+          <dl class="clearfix">
+            <dt>品牌</dt>
+            <dd>
+              <div class="dd-top">
+                <span class="a-box">
+                  <!-- 不限 -->
+                  <a class="active" href="/hz/buy/#bread">大众</a>
+                  <!-- 热门品牌 -->
+                  <a href="/hz/buick/#bread">别克</a>
+                  <a href="/hz/bmw/#bread">宝马</a>
+                  <a href="/hz/audi/#bread">奥迪</a>
+                  <a href="/hz/honda/#bread">本田</a>
+                  <a href="/hz/chevrolet/#bread">雪佛兰</a>
+                  <a href="/hz/toyota/#bread">丰田</a>
+                  <a href="/hz/mazda/#bread">马自达</a>
+                </span>
+              </div>
+            </dd>
+          </dl>
         </div>
       </div>
 
@@ -101,14 +144,17 @@ export default {
     //     }
     //   );
     // },
+
     getData() {
       $axios.get("../../static/carDetails.json").then(
         response => {
-          var iconListArr = response.data.beijing;
+          var iconListArr = response.data.beijing[0].daZhong;
           for (let i in iconListArr) {
             var id = iconListArr[i].id - 1;
             this.carArrs.push(iconListArr[id]);
           }
+          console.log(iconListArr);
+          
         },
         response => {
           console.log("数据加载失败");
@@ -140,13 +186,23 @@ export default {
 </script>
 
 <style scoped>
+dl{
+  margin: 0;
+  padding: 0;
+}
 a {
   text-decoration: none;
   outline: 0;
   font-weight: 400;
   cursor: pointer;
 }
-
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
 /*条件选择框开始*/
 
 .conSelectionBox {
@@ -161,7 +217,6 @@ a {
 .conSelectionBox .title {
   font-size: 20px;
   font-family: Microsoft Yahei, arial, "sans-serif";
-  display: inline-block;
   width: 220px;
   height: 50px;
   line-height: 50px;
@@ -211,6 +266,60 @@ a {
   border: none;
 }
 /*条件选择框结束*/
+
+/*车源条件筛选开始*/
+.conSelectionBox .screen {
+  width: 1198px;
+  border: 1px solid #e6e6e6;
+}
+.conSelectionBox .screen dl {
+  border-bottom: 1px solid #e6e6e6;
+  min-height: 50px;
+  position: relative;
+}
+.screen dt {
+  float: left;
+  width: 70px;
+  height: 100%;
+  position: absolute;
+  line-height: 50px;
+  font-size: 14px;
+  color: #7a838d;
+  text-align: center;
+  background: #fafafa;
+}
+.screen dd {
+  float: right;
+  width: 1128px;
+}
+.dd-top {
+  height: 20px;
+  padding: 15px 0 15px 6px;
+}
+.dd-top .a-box {
+  float: left;
+  width: 940px;
+  height: 20px;
+  overflow: hidden;
+}
+/*点击加上一个类*/
+.dd-top a.active {
+  color: #fff;
+  background: #22ac38;
+  text-decoration: none;
+}
+
+.dd-top a {
+  float: left;
+  height: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0 6px;
+  color: #495056;
+  margin: 0 8px;
+}
+/*车源条件筛选结束*/
+
 /*主要车辆内容列表开始*/
 .mainContent::after {
   content: "";

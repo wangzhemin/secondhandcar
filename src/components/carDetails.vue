@@ -23,7 +23,7 @@ export default {
     let self = this;
     $axios.get("../../static/carDetails.json").then(
       response => {
-        let datas = response.data.beijing;
+        let datas = response.data.beijing[0].daZhong;
         // console.log(datas);
         if (datas && datas.length > 0) {
           self.carDetailsData = datas[self.id - 1];
