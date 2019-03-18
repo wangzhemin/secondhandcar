@@ -58,6 +58,7 @@ export default {
 }
 .list {
   float: right;
+  width: 50%;
 }
 ul {
   display: flex;

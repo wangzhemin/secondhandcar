@@ -1,0 +1,11 @@
+[
+ {"id":1,
+  "beijing": [{"daZhong":{}}, {"baoMA":{}}]
+}, 
+{
+  "id":2,
+  "shangHai": [{}, {}]
+}, 
+{"id":3,
+  "hangzhou": [{}, {}]
+}]

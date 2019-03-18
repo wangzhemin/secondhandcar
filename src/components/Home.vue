@@ -175,11 +175,11 @@ export default {
       //热销推荐数据
       hotCarList: [
         {
-          carName: "雪佛兰",
-          carPrice: "5.53",
+          carName: "大众",
+          carPrice: "4.80",
           carImg:
-            "http://c2.xinstatic.com/che/20161209/1443/584a5278740d3745223.jpg",
-          carHerf: "http://beijing/xuefulan/keluzi/sn_v20/h/"
+            "https://image1.guazistatic.com/qn1812132139350284fa4159241bcac88d496346b9c791.jpg?imageView2/1/w/600/h/400/q/88",
+          carHerf: "http://localhost:8888/carDetails/8"
         },
         {
           carName: "本田",
@@ -204,7 +204,7 @@ export default {
           carHerf: "http://beijing/xuefulan/keluzi/sn_v20/h/"
         },
         {
-          carName: "别克",
+          carName: "马自达",
           carPrice: "5.50",
           carImg:
             "http://c2.xinstatic.com/che/20161209/1447/584a537420c2f929132.jpg",

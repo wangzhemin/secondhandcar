@@ -30,12 +30,17 @@
               <div class="dd-top">
                 <span class="a-box">
                   <!-- 不限 -->
-                  <a class="active" href="/hz/buy/#bread">北京</a>
-                  <!-- 热门所在地 -->
-                  <a href="/hz/buick/#bread">上海</a>
-                  <a href="/hz/bmw/#bread">广州</a>
-                  <a href="/hz/ford/#bread">深圳</a>
-                  <a href="/hz/audi/#bread">杭州</a>
+                  <ul>
+                    <!-- 热门所在地 -->
+                    <li
+                      :class="activeClassCity == index ? 'active':''"
+                      v-for="(item,index) in cityList"
+                      :key="index"
+                      @click="chooseCity(index);getItemCity(index)"
+                    >
+                      <a>{{item}}</a>
+                    </li>
+                  </ul>
                 </span>
               </div>
             </dd>
@@ -47,15 +52,16 @@
               <div class="dd-top">
                 <span class="a-box">
                   <!-- 不限 -->
-                  <a class="active" href="/hz/buy/#bread">大众</a>
-                  <!-- 热门品牌 -->
-                  <a href="/hz/buick/#bread">别克</a>
-                  <a href="/hz/bmw/#bread">宝马</a>
-                  <a href="/hz/audi/#bread">奥迪</a>
-                  <a href="/hz/honda/#bread">本田</a>
-                  <a href="/hz/chevrolet/#bread">雪佛兰</a>
-                  <a href="/hz/toyota/#bread">丰田</a>
-                  <a href="/hz/mazda/#bread">马自达</a>
+                  <ul>
+                    <li
+                      v-for="(itemBrand,index) in brandList"
+                      :key="index"
+                      :class="activeClassBrand == index ? 'active':''"
+                      @click="getItemBrand(index);chooseBrand(index)"
+                    >
+                      <a class="active">{{itemBrand}}</a>
+                    </li>
+                  </ul>
                 </span>
               </div>
             </dd>
@@ -123,43 +129,104 @@ export default {
   data() {
     return {
       carSearch: "",
-      // productData: [],
       carArrs: [],
       newCarArrs: [],
-      isShow: "true"
+      isShow: "true",
+
+      // cityIndex: "",
+      //城市index传给儿子
+
+      // carIndex: "",
+      //车辆index传给儿子
+
+      //城市选中样式
+      activeClassCity: -1,
+      cityList: ["北京", "上海", "广州", "深圳", "杭州"],
+
+      //选中车牌样式
+      activeClassBrand: -1,
+      brandList: ["大众", "宝马", "奥迪", "本田", "马自达", "丰田"],
+
+      resData: [],
+      //初始的信息数据
+      carCity: [],
+      //匹配城市后的数据
+      iconListArr: []
+      // 最终展示的数据
     };
   },
   mounted() {
     this.getData();
   },
   methods: {
-    // getData() {
-    //   $axios.get("../../static/productDetails.json").then(
-    //     response => {
-    //       this.productData = response.data;
-    //       console.log(this.productData);
-    //     },
-    //     response => {
-    //       console.log("数据加载失败");
-    //     }
-    //   );
-    // },
-
     getData() {
       $axios.get("../../static/carDetails.json").then(
         response => {
-          var iconListArr = response.data.beijing[0].daZhong;
-          for (let i in iconListArr) {
-            var id = iconListArr[i].id - 1;
-            this.carArrs.push(iconListArr[id]);
-          }
-          console.log(iconListArr);
-          
+          this.resData = response.data[0];
+          // var iconListArr = resData.beijing.daZhong.carDetailsList;
+
+          // for (let i in iconListArr) {
+          //   var id = iconListArr[i].id;
+          //   this.carArrs.push(iconListArr[id]);
+          // }
+          // console.log(iconListArr);
         },
         response => {
           console.log("数据加载失败");
         }
       );
+    },
+    chooseCity(index) {
+      //选择城市
+      if (index == 0) {
+        this.carArrs = [];
+        // this.$store.commit("cityIndex", 0);
+        this.carCity = this.resData.beijing;
+      } else if (index == 1) {
+        this.carArrs = [];
+        // this.$store.commit("cityIndex", 1);
+
+        this.carCity = this.resData.shanghai;
+      } else if (index == 2) {
+        this.carArrs = [];
+        this.carCity = this.resData.guangzhou;
+      } else if (index == 3) {
+        this.carArrs = [];
+        this.carCity = this.resData.shenzhen;
+      } else if (index == 4) {
+        this.carArrs = [];
+        this.carCity = this.resData.hangzhou;
+      }
+    },
+    chooseBrand(index) {
+      // 选择车牌
+      if (index == 0) {
+        this.carArrs = [];
+        // this.$store.commit("carIndex", 0);
+        this.carIndex = 0;
+        this.iconListArr = this.carCity.daZhong.carDetailsList;
+      } else if (index == 1) {
+        this.carArrs = [];
+        // this.$store.commit("carIndex", 1);
+
+        this.iconListArr = this.carCity.baoMa.carDetailsList;
+      } else if (index == 2) {
+        this.carArrs = [];
+        this.iconListArr = this.carCity.daZhong.carDetailsList;
+      } else if (index == 3) {
+        this.carArrs = [];
+        this.iconListArr = this.carCity.daZhong.carDetailsList;
+      } else if (index == 4) {
+        this.carArrs = [];
+        this.iconListArr = this.carCity.daZhong.carDetailsList;
+      } else if (index == 5) {
+        this.carArrs = [];
+        this.iconListArr = this.carCity.daZhong.carDetailsList;
+      }
+      for (let i in this.iconListArr) {
+        var id = this.iconListArr[i].id;
+        this.carArrs.push(this.iconListArr[id]);
+      }
     },
 
     toDetail(id) {
@@ -173,20 +240,30 @@ export default {
         return iList.title.match(this.carSearch);
       });
       this.isShow = false;
+    },
+    getItemCity(index) {
+      this.activeClassCity = -1;
+      this.activeClassBrand = -1;
+      //清空城市 车牌的选择样式
+      this.activeClassCity = index; // 把当前点击元素的index，赋值给activeClassCity
+    },
+    getItemBrand(index) {
+      this.activeClassBrand = -1;
+      this.activeClassBrand = index; // 把当前点击元素的index，赋值给activeClassCity
     }
   },
   computed: {
-    searchCar: function() {
-      return this.carArrs.filter(iList => {
-        return iList.title.match(this.carSearch);
-      });
-    }
+    // searchCar: function() {
+    //   return this.carArrs.filter(iList => {
+    //     return iList.title.match(this.carSearch);
+    //   });
+    // }
   }
 };
 </script>
 
 <style scoped>
-dl{
+dl {
   margin: 0;
   padding: 0;
 }
@@ -303,19 +380,25 @@ a {
   overflow: hidden;
 }
 /*点击加上一个类*/
-.dd-top a.active {
+.dd-top li.active {
   color: #fff;
-  background: #22ac38;
+  background: #337ab7;
   text-decoration: none;
 }
 
-.dd-top a {
+.dd-top li.active a {
+  color: #fff;
+}
+.dd-top li a {
+  padding: 0 6px;
+  color: #495056;
+}
+.dd-top li {
   float: left;
   height: 20px;
   font-size: 14px;
   line-height: 20px;
   padding: 0 6px;
-  color: #495056;
   margin: 0 8px;
 }
 /*车源条件筛选结束*/

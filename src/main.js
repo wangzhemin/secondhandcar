@@ -13,6 +13,8 @@ import './assets/bootstrap/css/bootstrap.min.css'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
 
+import store from './store'
+
 Vue.config.productionTip = false
 Vue.use(VueAwesomeSwiper)
 
@@ -55,6 +57,7 @@ Vue.prototype.$axios = Axios
 new Vue({
   el: '#app',
   router,
+  store,
   VueAwesomeSwiper,
   components: {
     App

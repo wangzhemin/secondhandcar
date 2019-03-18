@@ -3,7 +3,6 @@
     <app-header></app-header>
     <router-view></router-view>
     <app-footer></app-footer>
-    
   </div>
 </template>
 
@@ -46,5 +45,14 @@ a {
   outline: 0;
   font-weight: 400;
   cursor: pointer;
+}
+address,
+cite,
+code,
+dfn,
+em,
+i,
+var {
+  font-style: normal;
 }
 </style>

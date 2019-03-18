@@ -1,133 +1,458 @@
-{
-  "beijing": [
-    {
-    "daZhong": [{
-        "id": "1",
-        "brand": "volkswagen",
-        "year": "2013",
-        "displacement": "1.6",
-        "Automatic": "自动挡",
-        "Price": "6.86",
-        "oldPrice": "15.00",
-        "imgUrl": "https://image.guazistatic.com/gz01190214/16/21/ab157a023f303dc24328758454eb5591.jpg@base@tag=imgScale&w=287&h=192&c=1&m=2&q=88",
-        "title": "大众 朗逸 改款经典",
-        "Kilometres": "1.6"
+[{
 
-      },
-      {
-        "id": "2",
-        "brand": "volkswagen",
-        "year": "2013",
-        "displacement": "1.8",
-        "Automatic": "自动挡",
-        "Price": "10.62",
-        "oldPrice": "25.30",
-        "imgUrl": "https://image.guazistatic.com/gz01190305/15/17/21a28eb34f606c5f54c0f11b25cace0f.jpg@base@tag=imgScale&w=287&h=192&c=1&m=2&q=88",
-        "title": "大众 迈腾 豪华版",
-        "Kilometres": "9.0"
+  "beijing": {
+    "cityId": 0,
+    "daZhong": {
+      "brandId": 0,
+      "carDetailsList": [{
+          "id": "0",
+          "brand": "volkswagen",
+          "year": "2012",
+          "displacement": "1.8",
+          "Automatic": "手动挡",
+          "Price": "10.95",
+          "oldPrice": "22.55",
+          "imgUrl": "https://image1.guazistatic.com/qn181112112413f4ceda4725ce874ac43721e83b915fd3.jpg?imageView2/1/w/600/h/400/q/88",
+          "title": "大众 途观 两驱",
+          "Kilometres": "3.3",
+          "sellerPhone": "11111111111",
+          "carimg": {
+            "titleImg": "https://image1.guazistatic.com/qn181112112413f4ceda4725ce874ac43721e83b915fd3.jpg?imageView2/1/w/600/h/400/q/88",
+            "items": [{
+                "imglist": "https://image1.guazistatic.com/qn181112112413f4ceda4725ce874ac43721e83b915fd3.jpg?imageView2/1/w/600/h/400/q/88"
+              },
+              {
+                "imglist": "https://image1.guazistatic.com/qn181227231055e2d9b47c6de1624243dbd635ba12e1ec.jpg?imageView2/1/w/600/h/400/q/88"
+              },
+              {
+                "imglist": "https://image.guazistatic.com/gz01181109/12/32/e63fc2d8d6c4833eaab3a422517c13cc.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+              },
+              {
+                "imglist": "https://image1.guazistatic.com/qn18111211252746e5039cc25cf82989227521169a9fc2.jpg?imageView2/1/w/600/h/400/q/88"
+              },
+              {
+                "imglist": "https://image.guazistatic.com/gz01181109/12/32/f2fac37194f6bfb399fed80f228d197a.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+              }
+            ]
+          }
+        }, {
+          "id": "1",
+          "brand": "volkswagen",
+          "year": "2013",
+          "displacement": "1.6",
+          "Automatic": "自动挡",
+          "Price": "6.86",
+          "oldPrice": "15.00",
+          "imgUrl": "https://image.guazistatic.com/gz01190304/13/36/50e36bca3128330d36443eb1233d0ef9.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88",
+          "title": "大众 朗逸 改款经典",
+          "sellerPhone": "2222222222",
+          "Kilometres": "1.6",
+          "carimg": {
+            "titleImg": "https://image.guazistatic.com/gz01190304/13/36/50e36bca3128330d36443eb1233d0ef9.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88",
+            "items": [{
+                "imglist": "https://image.guazistatic.com/gz01190304/13/36/50e36bca3128330d36443eb1233d0ef9.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+              },
+              {
+                "imglist": "https://image.guazistatic.com/gz01190304/13/36/e35424efe62d2c48fb4ecb9bb323736b.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+              },
+              {
+                "imglist": "https://image.guazistatic.com/gz01190304/13/36/1e4737a393bae03e00fe1b857b5730c6.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+              },
+              {
+                "imglist": "https://image.guazistatic.com/gz01190304/13/36/a286d0f11101756388682e0d4bf87022.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+              },
+              {
+                "imglist": "https://image.guazistatic.com/gz01190304/13/36/85a3cb37352ef82478bf942520e977d4.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+              }
+            ]
+          }
+
+        },
+        {
+          "id": "2",
+          "brand": "volkswagen",
+          "year": "2013",
+          "displacement": "1.8",
+          "Automatic": "自动挡",
+          "Price": "10.62",
+          "oldPrice": "25.30",
+          "imgUrl": "https://image1.guazistatic.com/qn180918083639211ff2de8bc18ae32b0d67f4881fcf12.jpg?imageView2/1/w/600/h/400/q/88",
+          "title": "大众 迈腾 豪华版",
+          "sellerPhone": "3333333333",
+          "Kilometres": "9.0",
+          "carimg": {
+            "titleImg": "https://image1.guazistatic.com/qn180918083639211ff2de8bc18ae32b0d67f4881fcf12.jpg?imageView2/1/w/600/h/400/q/88",
+            "items": [{
+                "imglist": "https://image1.guazistatic.com/qn180918083639211ff2de8bc18ae32b0d67f4881fcf12.jpg?imageView2/1/w/600/h/400/q/88"
+              },
+              {
+                "imglist": "https://image1.guazistatic.com/qn1809180836408d919b96322ba05b88a5bcbb57cef0f5.jpg?imageView2/1/w/600/h/400/q/88"
+              },
+              {
+                "imglist": "https://image.guazistatic.com/gz01180918/08/30/39e71b5266f3f2d02ab9554b469095af.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+              },
+              {
+                "imglist": "https://image1.guazistatic.com/qn181005044214ae70541fa3e6449aef5699402271f8c1.jpg?imageView2/1/w/600/h/400/q/88"
+              },
+              {
+                "imglist": "https://image.guazistatic.com/gz01180918/08/30/6532356875a086c9ef9b330307318c19.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+              }
+            ]
+          }
 
 
-      },
-      {
-        "id": "3",
-        "brand": "volkswagen",
-        "year": "2010",
-        "displacement": "1.8",
-        "Automatic": "自动挡",
-        "Price": "10.69",
-        "oldPrice": "23.50",
-        "imgUrl": "https://image.guazistatic.com/gz01190228/11/20/24e5c950b2850aa9f30f399a4b1eb142.jpg@base@tag=imgScale&w=287&h=192&c=1&m=2&q=88",
-        "title": "大众 帕萨特 御享版",
-        "Kilometres": "14.6"
+        },
+        {
+          "id": "3",
+          "brand": "volkswagen",
+          "year": "2010",
+          "displacement": "1.8",
+          "Automatic": "自动挡",
+          "Price": "10.69",
+          "oldPrice": "23.50",
+          "imgUrl": "https://image.guazistatic.com/gz01190102/16/47/cf2e29c28656a9650c986868c626391c.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88",
+          "title": "大众 帕萨特 御享版",
+          "sellerPhone": "4444444444",
+          "Kilometres": "14.6",
+          "carimg": {
+            "titleImg": "https://image.guazistatic.com/gz01190102/16/47/cf2e29c28656a9650c986868c626391c.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88",
+            "items": [{
+                "imglist": "https://image.guazistatic.com/gz01190102/16/47/cf2e29c28656a9650c986868c626391c.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+              },
+              {
+                "imglist": "https://image.guazistatic.com/gz01190102/16/47/0e10bf180d2381bb4b5281e750b1f3bb.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+              },
+              {
+                "imglist": "https://image.guazistatic.com/gz01190102/16/47/e436f30c05a34af7f31e5ffbe6a7a187.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+              },
+              {
+                "imglist": "https://image.guazistatic.com/gz01190102/16/47/595ab516a496a8f8b66663c8dfb80dc4.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+              },
+              {
+                "imglist": "https://image.guazistatic.com/gz01190102/16/47/50de94e10877551a40fde6ca85c6d08b.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+              }
+            ]
+          }
 
 
-      },
-      {
-        "id": "4",
-        "brand": "volkswagen",
+        },
+        {
+          "id": "4",
+          "brand": "volkswagen",
+          "year": "2012",
+          "displacement": "2.0",
+          "Automatic": "自动挡",
+          "Price": "13.66",
+          "oldPrice": "22.80",
+          "imgUrl": "https://image1.guazistatic.com/qn181221222737b6b3b4c6e18fada60e09fb970fd20b31.jpg?imageView2/1/w/600/h/400/q/88",
+          "title": "大众 cc 豪华型",
+          "sellerPhone": "5555555555",
+          "Kilometres": "5.2",
+          "carimg": {
+            "titleImg": "https://image1.guazistatic.com/qn181221222737b6b3b4c6e18fada60e09fb970fd20b31.jpg?imageView2/1/w/600/h/400/q/88",
+            "items": [{
+                "imglist": "https://image1.guazistatic.com/qn181221222737b6b3b4c6e18fada60e09fb970fd20b31.jpg?imageView2/1/w/600/h/400/q/88"
+              },
+              {
+                "imglist": "https://image1.guazistatic.com/qn181221222739576a756e1f7c53b0b43f48d7b4a01c52.jpg?imageView2/1/w/600/h/400/q/88"
+              },
+              {
+                "imglist": "https://image1.guazistatic.com/qn1812211428276ef7d856e4329823efc1439e7ee6080d.jpg?imageView2/1/w/600/h/400/q/88"
+              },
+              {
+                "imglist": "https://image1.guazistatic.com/qn181222005857c4fac07f330f75290044becaf34373e4.jpg?imageView2/1/w/600/h/400/q/88"
+              },
+              {
+                "imglist": "https://image1.guazistatic.com/qn181221142827e342fdafbdcff3d9becae0c58f9427d0.jpg?imageView2/1/w/600/h/400/q/88"
+              }
+            ]
+          }
+
+
+        },
+        {
+          "id": "5",
+          "brand": "volkswagen",
+          "year": "2016",
+          "displacement": "1.4",
+          "Automatic": "手动挡",
+          "Price": "4.70",
+          "sellerPhone": "666666666",
+          "oldPrice": "10.50",
+          "imgUrl": "https://image.guazistatic.com/gz01190304/18/13/5e9dde19cd6eaa4333dd284e83611a53.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88",
+          "title": "大众 捷达 质惠版",
+          "Kilometres": "7.6",
+          "carimg": {
+            "titleImg": "https://image.guazistatic.com/gz01190304/18/13/5e9dde19cd6eaa4333dd284e83611a53.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88",
+            "items": [{
+                "imglist": "https://image.guazistatic.com/gz01190304/18/13/5e9dde19cd6eaa4333dd284e83611a53.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+              },
+              {
+                "imglist": "https://image.guazistatic.com/gz01190304/18/13/d5715b23d1ea510edd085bc69f89b031.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+              },
+              {
+                "imglist": "https://image.guazistatic.com/gz01190304/18/13/84e1738d9f6098e85a0479d9b77fe67a.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+              },
+              {
+                "imglist": "https://image.guazistatic.com/gz01190304/18/13/dde50eaebda6866c07e20b790107724c.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+              },
+              {
+                "imglist": "https://image.guazistatic.com/gz01190304/18/13/d385ca4ec5306eaf26ee388635bcd3c2.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+              }
+            ]
+          }
+
+
+        },
+        {
+          "id": "6",
+          "brand": "volkswagen",
+          "year": "2008",
+          "displacement": "1.6",
+          "Automatic": "手动挡",
+          "Price": "3.12",
+          "sellerPhone": "77777777",
+          "oldPrice": "12.70",
+          "imgUrl": "https://image.guazistatic.com/gz01190306/10/29/b77591b07f7fc28f20d25f501d2dc8df.jpg@base@tag=imgScale&w=287&h=192&c=1&m=2&q=88",
+          "title": "大众 朗逸 品悠版",
+          "Kilometres": "7.1",
+          "carimg": {
+            "titleImg": "https://image.guazistatic.com/gz01190312/11/12/69cf49146de2e045f8b0191d0a9a5d64.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88",
+            "items": [{
+                "imglist": "https://image.guazistatic.com/gz01190312/11/12/69cf49146de2e045f8b0191d0a9a5d64.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+              },
+              {
+                "imglist": "https://image.guazistatic.com/gz01190312/11/12/f59e04fdc4cc45cc3671e37fdc12461c.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+              },
+              {
+                "imglist": "https://image.guazistatic.com/gz01190312/11/12/c2f1a110828ae16e21dacfbfd0af0ae5.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+              },
+              {
+                "imglist": "https://image.guazistatic.com/gz01190306/16/38/5682372b350b744a86410f7c5facc3d6.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+              },
+              {
+                "imglist": "https://image.guazistatic.com/gz01190312/11/12/5cd81388b7c27a64bae01acba45fc22e.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+              }
+            ]
+          }
+
+
+        },
+        {
+          "id": "7",
+          "brand": "volkswagen",
+          "year": "2016",
+          "displacement": "1.6",
+          "Automatic": "自动挡",
+          "Price": "14.86",
+          "oldPrice": "30.60",
+          "imgUrl": "https://image.guazistatic.com/gz01181203/16/52/ddefb3fa91c0a79c76221a375b6bce1b.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88",
+          "title": "大众 途观 四驱版",
+          "sellerPhone": "99955965",
+          "Kilometres": "5.1",
+          "carimg": {
+            "titleImg": "https://image.guazistatic.com/gz01181203/16/52/ddefb3fa91c0a79c76221a375b6bce1b.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88",
+            "items": [{
+                "imglist": "https://image.guazistatic.com/gz01181203/16/52/ddefb3fa91c0a79c76221a375b6bce1b.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+              },
+              {
+                "imglist": "https://image.guazistatic.com/gz01181203/16/52/24c125a36e56cdb04cd130deaef05af4.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+              },
+              {
+                "imglist": "https://image.guazistatic.com/gz01181203/16/52/3be49d7da7c4bc6eccb14c240d5accf8.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+              },
+              {
+                "imglist": "https://image.guazistatic.com/gz01181203/16/52/4c983fe95c1c8952a20a2895ec199758.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+              },
+              {
+                "imglist": "https://image.guazistatic.com/gz01181203/16/52/6a04bf7c07c81363079d3477281149cf.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+              }
+            ]
+          }
+
+
+        },
+        {
+          "id": "8",
+          "brand": "volkswagen",
+          "year": "2013",
+          "displacement": "1.4",
+          "Automatic": "自动挡",
+          "Price": "4.80",
+          "oldPrice": "13.28",
+          "imgUrl": "https://image1.guazistatic.com/qn1812132139350284fa4159241bcac88d496346b9c791.jpg?imageView2/1/w/600/h/400/q/88",
+          "title": "大众 POLO 舒适版",
+          "sellerPhone": "87456546",
+          "Kilometres": "4.3",
+          "carimg": {
+            "titleImg": "https://image1.guazistatic.com/qn1812132139350284fa4159241bcac88d496346b9c791.jpg?imageView2/1/w/600/h/400/q/88",
+            "items": [{
+                "imglist": "https://image1.guazistatic.com/qn1812132139350284fa4159241bcac88d496346b9c791.jpg?imageView2/1/w/600/h/400/q/88"
+              },
+              {
+                "imglist": "https://image1.guazistatic.com/qn1812132139350284fa4159241bcac88d496346b9c791.jpg?imageView2/1/w/600/h/400/q/88"
+              },
+              {
+                "imglist": "https://image1.guazistatic.com/qn181213213937d37f1cd267d6e8c50fe7fd44336f1359.jpg?imageView2/1/w/600/h/400/q/88"
+              },
+              {
+                "imglist": "https://image1.guazistatic.com/qn18121321365690b21504237f493d9bf8053a0a355afc.jpg?imageView2/1/w/600/h/400/q/88"
+              },
+              {
+                "imglist": "https://image1.guazistatic.com/qn18121114570145d0d6be5150598a446a23c9cbbda594.jpg?imageView2/1/w/600/h/400/q/88"
+              }
+            ]
+          }
+
+
+        }
+      ]
+    },
+    "baoMa": {
+      "brandId": 1,
+      "carDetailsList": [{
+        "id": "0",
+        "brand": "bmw",
         "year": "2012",
-        "displacement": "2.0",
+        "displacement": "1.8",
         "Automatic": "自动挡",
-        "Price": "13.66",
-        "oldPrice": "22.80",
-        "imgUrl": "https://image.guazistatic.com/gz01190305/10/57/2a6bc06470e709a729254cacabb4ed8a.jpg@base@tag=imgScale&w=287&h=192&c=1&m=2&q=88",
-        "title": "大众 cc 豪华型",
-        "Kilometres": "5.2"
-
-
-      },
-      {
-        "id": "5",
-        "brand": "volkswagen",
-        "year": "2016",
-        "displacement": "1.4",
-        "Automatic": "手动挡",
-        "Price": "4.70",
-        "oldPrice": "10.50",
-        "imgUrl": "https://image1.guazistatic.com/qn18121214054341323366918dc47e9963ffe016b0fdef.jpg?imageView2/1/w/287/h/192/q/88",
-        "title": "大众 捷达 质惠版",
-        "Kilometres": "7.6"
-
-
-      },
-      {
-        "id": "6",
-        "brand": "volkswagen",
-        "year": "2008",
-        "displacement": "1.6",
-        "Automatic": "手动挡",
-        "Price": "3.12",
-        "oldPrice": "12.70",
-        "imgUrl": "https://image.guazistatic.com/gz01190306/10/29/b77591b07f7fc28f20d25f501d2dc8df.jpg@base@tag=imgScale&w=287&h=192&c=1&m=2&q=88",
-        "title": "大众 朗逸 品悠版",
-        "Kilometres": "7.1"
-
-
-      },
-      {
-        "id": "7",
-        "brand": "volkswagen",
-        "year": "2016",
-        "displacement": "1.6",
-        "Automatic": "自动挡",
-        "Price": "14.86",
-        "oldPrice": "30.60",
-        "imgUrl": "https://image.guazistatic.com/gz01190222/18/47/0cedf28e42c27b6dfe01b602b708f70a.jpg@base@tag=imgScale&w=287&h=192&c=1&m=2&q=88",
-        "title": "大众 途观 四驱版",
-        "Kilometres": "5.1"
-
-
-      },
-      {
-        "id": "8",
-        "brand": "volkswagen",
-        "year": "2013",
-        "displacement": "1.4",
-        "Automatic": "自动挡",
-        "Price": "4.80",
-        "oldPrice": "13.28",
-        "imgUrl": "https://image.guazistatic.com/gz01190220/12/33/717e005d72de92e55b10a45ee7848be0.jpg@base@tag=imgScale&w=287&h=192&c=1&m=2&q=88",
-        "title": "大众 POLO 舒适版",
-        "Kilometres": "4.3"
-
-
+        "Price": "20.36",
+        "oldPrice": "55.70",
+        "imgUrl": "https://image.guazistatic.com/gz01190312/01/16/986ba444eafa2325a717dbd734d969af.jpg@base@tag=imgScale&w=287&h=192&c=1&m=2&q=88",
+        "title": "宝马5系 523Li豪华型",
+        "Kilometres": "7.1",
+        "sellerPhone": "21111111111",
+        "carimg": {
+          "titleImg": "https://image.guazistatic.com/gz01190312/01/16/986ba444eafa2325a717dbd734d969af.jpg@base@tag=imgScale&w=287&h=192&c=1&m=2&q=88",
+          "items": [{
+              "imglist": "https://image.guazistatic.com/gz01190312/01/16/986ba444eafa2325a717dbd734d969af.jpg@base@tag=imgScale&w=287&h=192&c=1&m=2&q=88"
+            },
+            {
+              "imglist": "https://image.guazistatic.com/gz01190312/01/16/39ac09a3c3d9d801394b0aa39038b15f.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+            },
+            {
+              "imglist": "https://image.guazistatic.com/gz01190312/01/16/1794c9eb153f6bbb9d12a805223d7c51.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+            },
+            {
+              "imglist": "https://image.guazistatic.com/gz01190312/01/16/8a88ff7b8d444be608bb6fa44cbce48f.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+            },
+            {
+              "imglist": "https://image.guazistatic.com/gz01190310/16/19/e1306a7f95cbc5bb72e20aaa42ff250d.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+            }
+          ]
+        }
       }, {
-        "id": "9",
-        "brand": "volkswagen",
-        "year": "2012",
-        "displacement": "1.8",
-        "Automatic": "手动挡",
-        "Price": "10.95",
-        "oldPrice": "22.55",
-        "imgUrl": "https://image.guazistatic.com/gz01190228/15/05/b9d2d9bee90cd25dfd54e22e2dac9273.jpg@base@tag=imgScale&w=287&h=192&c=1&m=2&q=88",
-        "title": "大众 途观 两驱",
-        "Kilometres": "3.3"
-      }
-    ]
-  }],
-  "shanghai": [
+        "id": "1",
+        "brand": "bmw",
+        "year": "2011",
+        "displacement": "1.5",
+        "Automatic": "自动挡",
+        "Price": "10.50",
+        "oldPrice": "39.80",
+        "imgUrl": "https://image.guazistatic.com/gz01190126/15/09/1bd623f5705ff321c8f9e384e5152f8b.jpg@base@tag=imgScale&w=287&h=192&c=1&m=2&q=88",
+        "title": "宝马X1 sDrive豪华型",
+        "Kilometres": "3.7",
+        "sellerPhone": "21211111111",
+        "carimg": {
+          "titleImg": "https://image.guazistatic.com/gz01190126/15/09/1bd623f5705ff321c8f9e384e5152f8b.jpg@base@tag=imgScale&w=287&h=192&c=1&m=2&q=88",
+          "items": [{
+              "imglist": "https://image.guazistatic.com/gz01190126/15/09/1bd623f5705ff321c8f9e384e5152f8b.jpg@base@tag=imgScale&w=287&h=192&c=1&m=2&q=88"
+            },
+            {
+              "imglist": "https://image.guazistatic.com/gz01190126/15/09/7fe8341181689f9d9feb5aef6cd876de.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+            },
+            {
+              "imglist": "https://image.guazistatic.com/gz01190126/15/09/849db5db4a30088d7d24ebcaf2e46c83.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+            },
+            {
+              "imglist": "https://image.guazistatic.com/gz01190126/15/09/ae1e5f8193c2edf63b4b0a882c2ce969.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+            },
+            {
+              "imglist": "https://image.guazistatic.com/gz01190126/15/09/30b920f77d19893d82c80c4748a0cf04.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+            }
+          ]
+        }
+      }]
 
-  ],
+    }
+  },
+  "shanghai": {
+    "cityId": 1,
+    "daZhong": {
+      "brandId": 0,
+      "carDetailsList": [{
+          "id": "0",
+          "brand": "volkswagen",
+          "year": "2012",
+          "displacement": "1.8",
+          "Automatic": "手动挡",
+          "Price": "10.95",
+          "oldPrice": "22.55",
+          "imgUrl": "https://image1.guazistatic.com/qn181112112413f4ceda4725ce874ac43721e83b915fd3.jpg?imageView2/1/w/600/h/400/q/88",
+          "title": "大众 途观 两驱",
+          "Kilometres": "3.3",
+          "sellerPhone": "11111111111",
+          "carimg": {
+            "titleImg": "https://image1.guazistatic.com/qn181112112413f4ceda4725ce874ac43721e83b915fd3.jpg?imageView2/1/w/600/h/400/q/88",
+            "items": [{
+                "imglist": "https://image1.guazistatic.com/qn181112112413f4ceda4725ce874ac43721e83b915fd3.jpg?imageView2/1/w/600/h/400/q/88"
+              },
+              {
+                "imglist": "https://image1.guazistatic.com/qn181227231055e2d9b47c6de1624243dbd635ba12e1ec.jpg?imageView2/1/w/600/h/400/q/88"
+              },
+              {
+                "imglist": "https://image.guazistatic.com/gz01181109/12/32/e63fc2d8d6c4833eaab3a422517c13cc.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+              },
+              {
+                "imglist": "https://image1.guazistatic.com/qn18111211252746e5039cc25cf82989227521169a9fc2.jpg?imageView2/1/w/600/h/400/q/88"
+              },
+              {
+                "imglist": "https://image.guazistatic.com/gz01181109/12/32/f2fac37194f6bfb399fed80f228d197a.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+              }
+            ]
+          }
+        },
+        {
+          "id": "1",
+          "brand": "volkswagen",
+          "year": "2013",
+          "displacement": "1.6",
+          "Automatic": "自动挡",
+          "Price": "6.86",
+          "oldPrice": "15.00",
+          "imgUrl": "https://image.guazistatic.com/gz01190304/13/36/50e36bca3128330d36443eb1233d0ef9.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88",
+          "title": "大众 朗逸 改款经典",
+          "sellerPhone": "2222222222",
+          "Kilometres": "1.6",
+          "carimg": {
+            "titleImg": "https://image.guazistatic.com/gz01190304/13/36/50e36bca3128330d36443eb1233d0ef9.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88",
+            "items": [{
+                "imglist": "https://image.guazistatic.com/gz01190304/13/36/50e36bca3128330d36443eb1233d0ef9.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+              },
+              {
+                "imglist": "https://image.guazistatic.com/gz01190304/13/36/e35424efe62d2c48fb4ecb9bb323736b.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+              },
+              {
+                "imglist": "https://image.guazistatic.com/gz01190304/13/36/1e4737a393bae03e00fe1b857b5730c6.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+              },
+              {
+                "imglist": "https://image.guazistatic.com/gz01190304/13/36/a286d0f11101756388682e0d4bf87022.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+              },
+              {
+                "imglist": "https://image.guazistatic.com/gz01190304/13/36/85a3cb37352ef82478bf942520e977d4.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+              }
+            ]
+          }
+
+        }
+
+
+
+
+
+      ]
+    }
+  },
   "guangzhou": [
 
   ],
@@ -139,4 +464,4 @@
   ]
 
 
-}
+}]
