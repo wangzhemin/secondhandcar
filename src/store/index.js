@@ -4,11 +4,22 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
-    cityIndex: "111",
+    cityIndex: "6",
     //城市index传给儿子
 
-    carIndex: ""
+    carIndex: "555"
     //车辆index传给儿子
+  },
+  mutations: {
+    cityIndexMu: (state, payload) => {
+      state.cityIndex = payload
+    }
+  },
+  actions: {
+    cityIndexAc: (context, payload) => {
+      context.commit('cityIndexMu', payload)
+    }
   }
+
 
 })

@@ -91,6 +91,7 @@
         <span>车主的电话是：{{carDetailsData.sellerPhone}}</span>
       </div>
     </div>
+    <span>{{cityIndexMu}}</span>
   </div>
 </template>
 
@@ -135,9 +136,7 @@ export default {
     },
     showMyPhone() {
       alert("请咨询客服15757595721");
-        console.log(this.$store.state.cityIndex);
-        console.log(this.$store.state.carIndex);
-
+      alert(this.$store.state.cityIndex);
     },
     showAlertBox() {
       if (!this.alertBox) {
@@ -154,7 +153,6 @@ export default {
         // console.log(datas);
         // console.log(this.id);
 
-      
         if (datas && datas.length > 0) {
           this.carDetailsData = datas[this.id];
           this.carimg = this.carDetailsData.carimg;
@@ -167,6 +165,11 @@ export default {
         console.log("数据加载失败");
       }
     );
+  },
+  computed: {
+    cityIndexMu() {
+      return this.$store.state.cityIndex;
+    }
   }
 };
 </script>

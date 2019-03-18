@@ -163,13 +163,6 @@ export default {
       $axios.get("../../static/carDetails.json").then(
         response => {
           this.resData = response.data[0];
-          // var iconListArr = resData.beijing.daZhong.carDetailsList;
-
-          // for (let i in iconListArr) {
-          //   var id = iconListArr[i].id;
-          //   this.carArrs.push(iconListArr[id]);
-          // }
-          // console.log(iconListArr);
         },
         response => {
           console.log("数据加载失败");
@@ -180,11 +173,13 @@ export default {
       //选择城市
       if (index == 0) {
         this.carArrs = [];
-        // this.$store.commit("cityIndex", 0);
+        this.$store.commit("cityIndexMu", 888);
+
+        // this.$store.dispatch("cityIndexAc", 0);
+        console.log(this.$store.state.cityIndex);
         this.carCity = this.resData.beijing;
       } else if (index == 1) {
         this.carArrs = [];
-        // this.$store.commit("cityIndex", 1);
 
         this.carCity = this.resData.shanghai;
       } else if (index == 2) {
@@ -202,13 +197,9 @@ export default {
       // 选择车牌
       if (index == 0) {
         this.carArrs = [];
-        // this.$store.commit("carIndex", 0);
-        this.carIndex = 0;
         this.iconListArr = this.carCity.daZhong.carDetailsList;
       } else if (index == 1) {
         this.carArrs = [];
-        // this.$store.commit("carIndex", 1);
-
         this.iconListArr = this.carCity.baoMa.carDetailsList;
       } else if (index == 2) {
         this.carArrs = [];
@@ -230,11 +221,12 @@ export default {
     },
 
     toDetail(id) {
-      this.$router.push({ path: `/carDetails/${id}` });
+      this.$router.push({ path: `/CarDetails/${id}` });
     },
     toSearchCar(carArrs) {
       if (this.carSearch == "") {
         alert("请输入你要查询的车辆");
+        alert(this.$store.state.cityIndex);
       }
       this.newCarArrs = carArrs.filter(iList => {
         return iList.title.match(this.carSearch);
@@ -252,13 +244,7 @@ export default {
       this.activeClassBrand = index; // 把当前点击元素的index，赋值给activeClassCity
     }
   },
-  computed: {
-    // searchCar: function() {
-    //   return this.carArrs.filter(iList => {
-    //     return iList.title.match(this.carSearch);
-    //   });
-    // }
-  }
+  computed: {}
 };
 </script>
 

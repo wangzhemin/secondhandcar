@@ -310,7 +310,8 @@
     },
     "baoMa": {
       "brandId": 1,
-      "carDetailsList": [{
+      "carDetailsList": [
+        {
         "id": "0",
         "brand": "bmw",
         "year": "2012",
@@ -341,7 +342,8 @@
             }
           ]
         }
-      }, {
+      }, 
+      {
         "id": "1",
         "brand": "bmw",
         "year": "2011",
@@ -369,6 +371,69 @@
             },
             {
               "imglist": "https://image.guazistatic.com/gz01190126/15/09/30b920f77d19893d82c80c4748a0cf04.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+            }
+          ]
+        }
+      },
+      {
+        "id": "2",
+        "brand": "bmw",
+        "year": "2012",
+        "displacement": "1.8",
+        "Automatic": "自动挡",
+        "Price": "20.36",
+        "oldPrice": "55.70",
+        "imgUrl": "https://image.guazistatic.com/gz01190312/01/16/986ba444eafa2325a717dbd734d969af.jpg@base@tag=imgScale&w=287&h=192&c=1&m=2&q=88",
+        "title": "宝马5系 523Li豪华型",
+        "Kilometres": "7.1",
+        "sellerPhone": "21111111111",
+        "carimg": {
+          "titleImg": "https://image.guazistatic.com/gz01190312/01/16/986ba444eafa2325a717dbd734d969af.jpg@base@tag=imgScale&w=287&h=192&c=1&m=2&q=88",
+          "items": [{
+              "imglist": "https://image.guazistatic.com/gz01190312/01/16/986ba444eafa2325a717dbd734d969af.jpg@base@tag=imgScale&w=287&h=192&c=1&m=2&q=88"
+            },
+            {
+              "imglist": "https://image.guazistatic.com/gz01190312/01/16/39ac09a3c3d9d801394b0aa39038b15f.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+            },
+            {
+              "imglist": "https://image.guazistatic.com/gz01190312/01/16/1794c9eb153f6bbb9d12a805223d7c51.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+            },
+            {
+              "imglist": "https://image.guazistatic.com/gz01190312/01/16/8a88ff7b8d444be608bb6fa44cbce48f.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+            },
+            {
+              "imglist": "https://image.guazistatic.com/gz01190310/16/19/e1306a7f95cbc5bb72e20aaa42ff250d.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+            }
+          ]
+        }
+      },   {
+        "id": "3",
+        "brand": "bmw",
+        "year": "2012",
+        "displacement": "1.8",
+        "Automatic": "自动挡",
+        "Price": "20.36",
+        "oldPrice": "55.70",
+        "imgUrl": "https://image.guazistatic.com/gz01190312/01/16/986ba444eafa2325a717dbd734d969af.jpg@base@tag=imgScale&w=287&h=192&c=1&m=2&q=88",
+        "title": "宝马5系 523Li豪华型",
+        "Kilometres": "7.1",
+        "sellerPhone": "21111111111",
+        "carimg": {
+          "titleImg": "https://image.guazistatic.com/gz01190312/01/16/986ba444eafa2325a717dbd734d969af.jpg@base@tag=imgScale&w=287&h=192&c=1&m=2&q=88",
+          "items": [{
+              "imglist": "https://image.guazistatic.com/gz01190312/01/16/986ba444eafa2325a717dbd734d969af.jpg@base@tag=imgScale&w=287&h=192&c=1&m=2&q=88"
+            },
+            {
+              "imglist": "https://image.guazistatic.com/gz01190312/01/16/39ac09a3c3d9d801394b0aa39038b15f.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+            },
+            {
+              "imglist": "https://image.guazistatic.com/gz01190312/01/16/1794c9eb153f6bbb9d12a805223d7c51.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+            },
+            {
+              "imglist": "https://image.guazistatic.com/gz01190312/01/16/8a88ff7b8d444be608bb6fa44cbce48f.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
+            },
+            {
+              "imglist": "https://image.guazistatic.com/gz01190310/16/19/e1306a7f95cbc5bb72e20aaa42ff250d.jpg@base@tag=imgScale&w=600&h=400&c=1&m=2&q=88"
             }
           ]
         }

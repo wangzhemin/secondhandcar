@@ -39,13 +39,7 @@
       <!-- 热销 推荐 头部 -->
       <div class="MD-home-nav-nav">
         <h3 class="MD-home-nav-nav-title">热销推荐</h3>
-        <a
-          href="javascript:void(0);"
-          data-idx="0"
-          data-type="half"
-          data-class="nav-tab"
-          class="MD-home-nav-tab-title"
-        >马上购</a>
+        <a data-class="nav-tab" class="MD-home-nav-tab-title">马上购</a>
         <p class="MD-home-nav-js-line MD-home-nav-line" style="left: 138px; width: 54px;"></p>
 
         <router-link class="MD-home-nav-more" :to="{name:'WantBuy'}">更多>></router-link>
@@ -255,8 +249,7 @@ a {
   font-weight: 400;
   cursor: pointer;
 }
-#home{
- 
+#home {
 }
 /*轮播区域开始*/
 
